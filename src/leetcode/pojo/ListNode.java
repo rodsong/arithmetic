@@ -10,10 +10,14 @@ package leetcode.pojo;
  */
 public class ListNode {
     public int val;
-    private ListNode next;
+    public ListNode next;
 
     public ListNode(int x) {
         val = x;
+    }
+
+    public ListNode(){
+
     }
 
     public ListNode getNext() {
@@ -47,5 +51,15 @@ public class ListNode {
         sb.append(", next=").append(next);
         sb.append('}');
         return sb.toString();
+    }
+
+    public void printString() {
+        ListNode node = this;
+        do {
+            System.out.print(node.val +"-->");
+            node = node.getNext();
+        } while (node != null);
+
+        System.out.println("null");
     }
 }
