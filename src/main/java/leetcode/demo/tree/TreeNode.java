@@ -1,4 +1,4 @@
-package lc.demo.tree;
+package leetcode.demo.tree;
 
 import java.util.Objects;
 

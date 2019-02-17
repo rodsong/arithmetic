@@ -1,4 +1,4 @@
-package lc.demo.link;
+package leetcode.demo.link;
 
 import leetcode.pojo.ListNode;
 
@@ -15,6 +15,9 @@ import leetcode.pojo.ListNode;
  */
 public class MergeTwoLists_23 {
 
+    /**
+     * 递归
+     */
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) {
             return l2;

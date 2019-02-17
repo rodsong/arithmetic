@@ -1,7 +1,7 @@
-package lc.demo;
+package leetcode.demo;
 
-import lc.demo.tree.TreeNode;
-import lc.demo.tree.Tree_94;
+import leetcode.demo.tree.TreeNode;
+import leetcode.demo.tree.Tree_94;
 
 import java.util.*;
 

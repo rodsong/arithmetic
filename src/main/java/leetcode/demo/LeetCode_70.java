@@ -1,6 +1,6 @@
-package lc.demo;
+package leetcode.demo;
 
-import lc.demo.tree.TreeNode;
+import leetcode.demo.tree.TreeNode;
 
 /**
  * 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。

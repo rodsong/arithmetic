@@ -1,4 +1,4 @@
-package lc.demo.link;
+package leetcode.demo.link;
 
 /**
  * <p>SwapPair_24</p>
@@ -24,12 +24,12 @@ public class SwapPair_24_2 {
     }
 
     // 每次从局部头部后两个node 交换
+    // 递归
     private void swap(ListNode tem_head, ListNode node1) {
 
         if (node1 == null || node1.next == null) {
             return;
         }
-
 
         ListNode node2 = node1.next;
         ListNode temp = node2.next;

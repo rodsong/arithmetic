@@ -1,4 +1,4 @@
-package lc.demo.link;
+package leetcode.demo.link;
 
 import leetcode.pojo.ListNode;
 

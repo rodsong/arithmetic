@@ -1,7 +1,7 @@
 package leetcode.pojo;
 
 /**
- * <p>leetcode.pojo.ListNode</p>
+ * <p>leetcode.leetcode.pojo.ListNode</p>
  * Copyright @ 2019 Shanghai hailang Co. Ltd.
  * All right reserved.
  *
@@ -25,7 +25,7 @@ public class ListNode {
     }
 
     public ListNode setNext(ListNode next) {
-        this.next = next;
+        next = next;
         return this;
     }
 

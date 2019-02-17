@@ -1,4 +1,4 @@
-package lc.demo;
+package leetcode.demo;
 
 /**
  * <p>EO_test</p>

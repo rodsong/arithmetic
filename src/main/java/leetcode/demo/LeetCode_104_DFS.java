@@ -1,6 +1,6 @@
-package lc.demo;
+package leetcode.demo;
 
-import lc.demo.tree.TreeNode;
+import leetcode.demo.tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

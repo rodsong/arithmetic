@@ -1,9 +1,6 @@
-package lc.demo;
+package leetcode.demo;
 
-import lc.demo.link.Leadcode_MergeTwoLists_23_2;
 import leetcode.pojo.ListNode;
-
-import java.util.Collections;
 
 /**
  * <p>LeatCode_23_merge_k_link</p>

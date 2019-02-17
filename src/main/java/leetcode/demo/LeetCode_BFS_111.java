@@ -1,9 +1,8 @@
-package lc.demo;
+package leetcode.demo;
 
-import lc.demo.tree.TreeNode;
+import leetcode.demo.tree.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * <p>LeetCode_BFS_102</p>
@@ -31,18 +30,29 @@ import java.util.List;
  * [9,20],
  * [15,7]
  * ]
- * <p>
- * <p>
+ *
+ *
  * breadth first search
  */
-public class LeetCode_104_BFS extends TreeNode {
+public class LeetCode_BFS_111 extends TreeNode {
 
     /**
-     * 最大深度：层级中不存在左右节点的就是最小深度节点
+     * 最小深度：层级中不存在左右节点的就是最小深度节点
      *
      * @param root
      * @return
      */
+    public int minDepth(TreeNode root) {
+
+        if (root == null) {
+            return 0;
+        }
+
+        List<TreeNode> temp = new ArrayList<>();
+        temp.add(root);
+        return levelNode(1, temp);
+    }
+
 
     public int maxDepth(TreeNode root) {
 
@@ -62,6 +72,11 @@ public class LeetCode_104_BFS extends TreeNode {
 
         ArrayList<TreeNode> next = new ArrayList<>();
         for (TreeNode node : nextLevel) {
+            if (node.left == null && node.right == null) {
+                System.out.println("最小路径节点：" + node.val);
+                return currentLevel;
+            }
+
             if (node.left != null) {
                 next.add(node.left);
             }
@@ -69,12 +84,7 @@ public class LeetCode_104_BFS extends TreeNode {
                 next.add(node.right);
             }
         }
-        if (next.isEmpty()) {
-            return currentLevel;
-        } else {
-            return levelNode(currentLevel + 1, next);
-        }
-
+        return levelNode(currentLevel + 1, next);
     }
 
     /**
@@ -88,7 +98,7 @@ public class LeetCode_104_BFS extends TreeNode {
         root.right.left.left = new TreeNode(5);
         root.right.left.right = new TreeNode(6);
 
-        int rel = new LeetCode_104_BFS().maxDepth(root);
+        int rel = new LeetCode_BFS_111().minDepth(root);
         System.out.println(rel);
     }
 }
